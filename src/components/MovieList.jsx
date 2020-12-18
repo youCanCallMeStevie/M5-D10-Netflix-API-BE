@@ -29,8 +29,8 @@ class MovieList extends React.Component {
 
   getMovies = async () => {
     const url = this.props.type
-      ? "http://www.omdbapi.com/?apikey=1bee4676&s=" + this.props.query + "&type=" + this.props.type
-      : "http://www.omdbapi.com/?apikey=1bee4676&s=" + this.props.query; 
+      ? `http://www.omdbapi.com/?apikey=1bee4676&s=` + this.props.query + "&type=" + this.props.type
+      : `http://www.omdbapi.com/?apikey=1bee4676&s=` + this.props.query; 
       console.log('url', url) 
     try {
       let response = await fetch(url);
