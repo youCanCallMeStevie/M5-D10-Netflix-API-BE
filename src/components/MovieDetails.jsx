@@ -20,7 +20,7 @@ export class MovieDetails extends Component {
 
 		try {
 			let response = await fetch(
-				`http://www.omdbapi.com/?apikey=${API_KEY_OMDB}&i=` + idFromSearchBar
+				`http://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY_OMDB}&i=` + idFromSearchBar
 			);
 
       if (response.ok) {
