@@ -3,20 +3,7 @@ import MovieList from "./MovieList";
 import { FormControl, Button, Form } from "react-bootstrap";
 
 class Home extends React.Component {
-  // state = {
-  //   keyWord: "",
-  //   isTyped: false,
-  // };
-
-  // HandleSearchQuery = query => {
-  //   if (query.length > 2) {
-  //     this.setState({ keyWord: query, isTyped: true });
-  //   } else {
-  //     this.setState({ keyWord: "", isTyped: false });
-  //   }
-  // };
-
-  state = {
+state = {
 		keyWord: "",
 		isTyped: false,
 	};
